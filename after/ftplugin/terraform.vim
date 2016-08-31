@@ -21,9 +21,3 @@ function! TerraformFoldText()
   return getline(v:foldstart).' ('.foldsize.' lines)'
 endfunction
 setlocal foldtext=TerraformFoldText()
-
-"inoremap <space> <C-O>za
-nnoremap <space> za
-onoremap <space> <C-C>za
-vnoremap <space> zf
-
